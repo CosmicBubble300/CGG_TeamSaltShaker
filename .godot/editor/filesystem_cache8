@@ -1,12 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699132362
-default_env.tres::Environment::3668977654462601582::1699132256::0::1::::<><>::
+::res://::1699135811
+default_env.tres::Environment::3668977654462601582::1699135776::0::1::::<><>::
 icon.png::CompressedTexture2D::2075896688001246031::1699113696::1699113794::1::::<><>::
 README.md::TextFile::-1::1699113696::0::1::::<><>::
 testing.txt::TextFile::-1::1699113696::0::1::::<><>::
 testting.txt::TextFile::-1::1699113696::0::1::::<><>::
 VERSION.md::TextFile::-1::1699113696::0::1::::<><>::
-::res://Assets/::1699113696
+::res://Assets/::1699135698
+astronaut_test.png::CompressedTexture2D::1791898675857249981::1699135606::1699135698::1::::<><>::
 ::res://Assets/16x16/::1699113696
 ::res://Assets/16x16/Animated Tiles/::1699113794
 Village Animated Decorations.png::CompressedTexture2D::8752666857199506617::1699113696::1699113794::1::::<><>::
@@ -23,6 +24,10 @@ RVRoofs.png::CompressedTexture2D::8468333346596267199::1699113696::1699113794::1
 RVTerrain.png::CompressedTexture2D::4812461911425629215::1699113696::1699113794::1::::<><>::
 RVWalls.png::CompressedTexture2D::5506766743123347000::1699113696::1699113794::1::::<><>::
 RVWater.png::CompressedTexture2D::3564022029667706017::1699113696::1699113794::1::::<><>::
+::res://Assets/Fonts/::1699135698
+Painless.otf::FontFile::4666473159639403988::1699135606::1699135698::1::::<><>::
+PainlessFond_24.tres::FontFile::-1::1699135606::0::1::::<><>::res://Assets/Fonts/Painless.otf
+PainlessFont.tres::FontFile::-1::1699135606::0::1::::<><>::res://Assets/Fonts/Painless.otf
 ::res://Assets/Heroes/::1699113794
 Hero 01.png::CompressedTexture2D::2421871131005894236::1699113696::1699113794::1::::<><>::
 Hero 01a.png::CompressedTexture2D::1684494341324432650::1699113696::1699113794::1::::<><>::
@@ -36,6 +41,9 @@ Hero 05.png::CompressedTexture2D::7294907312052674134::1699113696::1699113794::1
 Hero 05a.png::CompressedTexture2D::2952255783148231643::1699113696::1699113794::1::::<><>::
 ::res://Assets/Knights/::1699113794
 Knight 01.png::CompressedTexture2D::2482278405702011940::1699113696::1699113794::1::::<><>::
+::res://Assets/NewTiles/::1699135698
+cornerWall.png::CompressedTexture2D::5536764891264016496::1699135606::1699135698::1::::<><>::
+sideWallsTest.png::CompressedTexture2D::6656025866960464409::1699135606::1699135698::1::::<><>::
 ::res://Assets/Villagers/::1699113794
 Villager 01.png::CompressedTexture2D::5482789899333182389::1699113696::1699113794::1::::<><>::
 Villager 01a.png::CompressedTexture2D::8743119329567165858::1699113696::1699113794::1::::<><>::
@@ -66,12 +74,19 @@ Villain 01a.png::CompressedTexture2D::1970317141286465173::1699113696::169911379
 Villain 02.png::CompressedTexture2D::5161740859504562894::1699113696::1699113794::1::::<><>::
 Villain 02a.png::CompressedTexture2D::903918408754844128::1699113696::1699113794::1::::<><>::
 Villain 03.png::CompressedTexture2D::7164819771058186319::1699113696::1699113794::1::::<><>::
-::res://Scenes/::1699132324
-MainScene.tscn::PackedScene::7261750039958901145::1699132256::0::1::::<><>::uid://ddmxxjdyy4myf::::res://Assets/16x16/Tilesets/RVFloors.png<>uid://b0ex4vl2x4dly::::res://Scenes/PlayerScene.tscn<>uid://d1svdjlixpbvo::::res://Scenes/OxygenCanScene.tscn<>uid://ds8yoak85tv4p::::res://Scenes/MonsterScene.tscn
-MonsterScene.tscn::PackedScene::8492267928377197653::1699132256::0::1::::<><>::res://Scripts/Monster.gd<>uid://0derp6k851vh::::res://Assets/Villains/blue-enemy.png
-OxygenCanScene.tscn::PackedScene::9022611689568841988::1699119480::0::1::::<><>::res://Scripts/OxygenCanScene.gd<>uid://4ttykyu276it::::res://icon.png
-PlayerScene.tscn::PackedScene::4150848685758857874::1699132256::0::1::::<><>::uid://4ttykyu276it::::res://icon.png<>res://Scripts/PlayerScript.gd
-::res://Scripts/::1699132065
-Monster.gd::GDScript::-1::1699132065::0::1::::<>CharacterBody2D<>::
-OxygenCanScene.gd::GDScript::-1::1699123931::0::1::::<>Node2D<>::
-PlayerScript.gd::GDScript::-1::1699131576::0::1::::<>CharacterBody2D<>::
+::res://Scenes/::1699135776
+DoorScene.tscn::PackedScene::-1::1699135606::0::1::::<><>::
+GameOverScene.tscn::PackedScene::-1::1699135606::0::1::::<><>::
+MainScene.tscn::PackedScene::7261750039958901145::1699135776::0::1::::<><>::uid://ddmxxjdyy4myf::::res://Assets/16x16/Tilesets/RVFloors.png<>uid://b0ex4vl2x4dly::::res://Scenes/PlayerScene.tscn<>uid://d1svdjlixpbvo::::res://Scenes/OxygenCanScene.tscn<>uid://ds8yoak85tv4p::::res://Scenes/MonsterScene.tscn
+MenuScene.tscn::PackedScene::-1::1699135606::0::1::::<><>::
+MonsterScene.tscn::PackedScene::8492267928377197653::1699135606::0::1::::<><>::res://Scripts/Monster.gd<>uid://dfw82pyc23bh3::::res://Assets/Villains/sad.png
+OxygenCanScene.tscn::PackedScene::9022611689568841988::1699135606::0::1::::<><>::res://Scripts/OxygenCanScene.gd<>uid://4ttykyu276it::::res://icon.png
+PlayerScene.tscn::PackedScene::-1::1699135606::0::1::::<><>::
+::res://Scripts/::1699135606
+DoorScene.gd::GDScript::-1::1699135606::0::1::::<>Node2D<>::
+GameOverScene.gd::GDScript::-1::1699135606::0::1::::<>CanvasLayer<>::
+Global.gd::GDScript::-1::1699135606::0::1::::<>Node<>::
+MenuScene.gd::GDScript::-1::1699135606::0::1::::<>CanvasLayer<>::
+Monster.gd::GDScript::-1::1699133923::0::1::::<>CharacterBody2D<>::
+OxygenCanScene.gd::GDScript::-1::1699135606::0::1::::<>Node2D<>::
+PlayerScript.gd::GDScript::-1::1699135606::0::1::::<>CharacterBody2D<>::
