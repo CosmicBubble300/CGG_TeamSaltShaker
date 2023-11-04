@@ -14,8 +14,11 @@ const O2CONSRUN = 3      # rate of O2 consumption while running
 var alive = true
 var O2 = 100                # Max O2
 var O2_change = O2CONSBASE  # regular rate of O2 depletion
-var overtime = 10
+var overtime = 10           # Amount of time you can live without air 
 
+# Tank Variables 
+var tank_spare = 1         # Amount of oxygen tanks the character is carrying 
+var tank_full = 100        # How much oxygen is in a full tank
 
 # Signals 
 signal game_over    # Player has been killed
@@ -77,12 +80,15 @@ func _physics_process(delta):
 func _on_OxygenTimer_timeout():
 	#Decreases the amount of oxygen in the bar as a function of time 
 	$OxygenBar.value -= O2_change
-	if $OxygenBar.value <= 0:
-		overtime -= 1
+	if $OxygenBar.value <= 0 and tank_spare != 0:
+		$OxygenBar.value = tank_full
+		tank_spare -= 1 
+	else:
+		overtime -= O2_change
 		if overtime == 0:
 			alive = false 
 
 # Allows Character to refill oxygen from oxygen canisters 
 func _on_OxygenCanister_O2_updated():
-	$OxygenBar.value += 10
+	tank_spare += 1 
 
