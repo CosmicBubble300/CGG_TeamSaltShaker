@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Assets/astronaut_test.png" type="Texture" id=1]
+[ext_resource path="res://Assets/astronaut_test.png" type="Texture2D" id=1]
 [ext_resource path="res://Scripts/PlayerScript.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=2]
@@ -8,10 +8,10 @@ radius = 98.0
 height = 180.0
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 113, 74 )
+size = Vector2( 113, 74 )
 
-[node name="Character" type="KinematicBody2D"]
-script = ExtResource( 2 )
+[node name="Character" type="CharacterBody2D"]
+script = ExtResource("2")
 
 [node name="HitBox" type="Area2D" parent="."]
 collision_layer = 2
@@ -27,7 +27,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2( 0, -7 )
 texture = ExtResource( 1 )
 region_rect = Rect2( 100, 100, 0, 0 )
@@ -36,15 +36,18 @@ __meta__ = {
 }
 
 [node name="OxygenBar" type="ProgressBar" parent="."]
-margin_left = 964.0
-margin_top = 598.0
-margin_right = 1322.0
-margin_bottom = 703.0
-rect_rotation = 270.0
-custom_colors/font_color = Color( 0.0588235, 0.0431373, 0.372549, 1 )
+offset_left = 964.0
+offset_top = 598.0
+offset_right = 1322.0
+offset_bottom = 703.0
+rotation = 270.0
+theme_override_colors/font_color = Color( 0.0588235, 0.0431373, 0.372549, 1 )
 value = 100.0
+<<<<<<< HEAD
 rounded = true
 percent_visible = false
+=======
+>>>>>>> 80b7adb649b08d14e563b08200dae12f9a3c68c4
 
 [node name="OxygenTimer" type="Timer" parent="."]
 wait_time = 0.7

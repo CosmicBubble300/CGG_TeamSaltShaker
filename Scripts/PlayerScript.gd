@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 ### SIGNALS ###
 signal game_over    # Player has been killed
@@ -17,8 +17,9 @@ const TANKMAX = 3        # The maximum numner of O2 tanks you can carry
 
 ### Variables ###
 # Loads global variables 
-onready var global_vars = get_node("/root/Global")
+@onready var global_vars = get_node("/root/Global")
 
+### Variables ###
 # Variables for health and oxygen consumption 
 var O2 = 100                # Max O2
 var O2_change = O2CONSBASE  # regular rate of O2 depletion
@@ -29,7 +30,7 @@ var tank_full = 100        # How much oxygen is in a full tank
 
 # Define Movements Variables 
 # How fast a character is going 
-var velocity : Vector2 = Vector2()
+#var velocity : Vector2 = Vector2()
 # What direction a character is looking in 
 var direction : Vector2 = Vector2()
 
@@ -61,15 +62,21 @@ func read_input():
 	# Applies walking, running and crouching speed to the character
 	if Input.is_action_pressed("SPRINT"):
 		# checks for collision and makes movement smooth
-		velocity = move_and_slide(velocity * RUN)
+		set_velocity(velocity * RUN)
+		move_and_slide()
+		velocity = velocity
 		# Increases oxygen consumption while runing 
 		O2_change = O2CONSRUN
 	elif Input.is_action_pressed("CROUCH"):
-		velocity = move_and_slide(velocity * CROUCH)
+		set_velocity(velocity * CROUCH)
+		move_and_slide()
+		velocity = velocity
 		# Sets oxygen consumption to normal
 		O2_change = O2CONSBASE
 	else:
-		velocity = move_and_slide(velocity * WALK)
+		set_velocity(velocity * WALK)
+		move_and_slide()
+		velocity = velocity
 		# Sets oxygen consumption to normal
 		O2_change = O2CONSBASE
 		
@@ -95,7 +102,7 @@ func _on_OxygenTimer_timeout():
 		overtime -= O2_change
 		# Kills the character when overtime runs out. 
 		if overtime == 0:
-			get_tree().change_scene("res://Scenes/GameOverScene.tscn")
+			get_tree().change_scene_to_file("res://Scenes/GameOverScene.tscn")
 
 
 
@@ -112,7 +119,7 @@ func _on_HitBox_body_entered(body):
 	# decides what happens on hit 
 	if randNum <= 3:
 		# if the value is less than the character dies 
-		get_tree().change_scene("res://Scenes/GameOverScene.tscn")
+		get_tree().change_scene_to_file("res://Scenes/GameOverScene.tscn")
 		print("dead")
 	elif randNum >= 4 and randNum <= 9:
 		# if the value is between 4 and 8 you loose an oxygen tank
@@ -123,7 +130,7 @@ func _on_HitBox_body_entered(body):
 			# lets you know you can carry more tanks
 		else:
 			# if you have no oxygen you die 
-			get_tree().change_scene("res://Scenes/GameOverScene.tscn")
+			get_tree().change_scene_to_file("res://Scenes/GameOverScene.tscn")
 	else:
 		# if your lucky, you live.
 		print("live")

@@ -1,0 +1,4 @@
+res://default_env.tres
+res://Scenes/DoorScene.tscn
+res://Scenes/GameOverScene.tscn
+res://Scenes/MenuScene.tscn
