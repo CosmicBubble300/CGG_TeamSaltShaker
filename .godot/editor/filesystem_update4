@@ -1,0 +1,8 @@
+res://default_env.tres
+res://Scenes/MainScene.tscn
+res://Scenes/MonsterScene.tscn
+res://Scenes/OxygenCanScene.tscn
+res://Scenes/PlayerScene.tscn
+res://Scripts/PlayerScript.gd
+res://Scripts/Monster.gd
+res://Scripts/OxygenCanScene.gd
