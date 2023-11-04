@@ -1,28 +1,31 @@
 extends KinematicBody2D
 
+### SIGNALS ###
+signal game_over    # Player has been killed
+
+### CONSTANTS ###
 # Defines constants for movement speed 
-const CROUCH = 50
-const WALK = 125
-const RUN = 150
+const CROUCH = 500
+const WALK = 1250
+const RUN = 1500
 
 # Defines constants for health and oxygen consumption
 const O2MAX = 100
 const O2CONSBASE = 1     # rate of O2 consumption while walking
 const O2CONSRUN = 3      # rate of O2 consumption while running 
+const TANKMAX = 3        # The maximum numner of O2 tanks you can carry 
+
+### Variables ###
+# Loads global variables 
+onready var global_vars = get_node("/root/Global")
 
 # Variables for health and oxygen consumption 
-var alive = true
 var O2 = 100                # Max O2
 var O2_change = O2CONSBASE  # regular rate of O2 depletion
 var overtime = 10           # Amount of time you can live without air 
 
 # Tank Variables 
-var tank_spare = 1         # Amount of oxygen tanks the character is carrying 
 var tank_full = 100        # How much oxygen is in a full tank
-
-# Signals 
-signal game_over    # Player has been killed
-
 
 # Define Movements Variables 
 # How fast a character is going 
@@ -30,7 +33,8 @@ var velocity : Vector2 = Vector2()
 # What direction a character is looking in 
 var direction : Vector2 = Vector2()
 
-# Defines Player Movement 
+
+### MOVEMENT ###
 func read_input():
 	# refidines velocity as an empty vector 
 	velocity = Vector2()
@@ -75,20 +79,53 @@ func _physics_process(delta):
 	read_input()
 	
 	
+### OXYGEN ###
 
 # Recieves signal from timer to decrease Oxygen 
 func _on_OxygenTimer_timeout():
 	#Decreases the amount of oxygen in the bar as a function of time 
 	$OxygenBar.value -= O2_change
-	if $OxygenBar.value <= 0 and tank_spare != 0:
-		$OxygenBar.value = tank_full
-		tank_spare -= 1 
-	else:
+	# Replenishes O2 with spare tank when oxygen is empty
+	if $OxygenBar.value <= 0 and len(global_vars.tank_list)  != 0:
+		$OxygenBar.value = global_vars.tank_list[0]
+		# Removes one spare tank
+		global_vars.tank_list.remove(0)
+	elif $OxygenBar.value <= 0 and len(global_vars.tank_list)  == 0:
+		# This code gives the player a window while their character suffocates 
 		overtime -= O2_change
+		# Kills the character when overtime runs out. 
 		if overtime == 0:
-			alive = false 
+			get_tree().change_scene("res://Scenes/GameOverScene.tscn")
 
-# Allows Character to refill oxygen from oxygen canisters 
-func _on_OxygenCanister_O2_updated():
-	tank_spare += 1 
 
+
+### DAMAGE ###
+# Creates new random number generator 
+var lifechance = RandomNumberGenerator.new()
+
+# Detects collisions with the enemy and kills them 
+func _on_HitBox_body_entered(body):
+	# generates a random int number 
+	lifechance.randomize()                      # removes pseudorandom nature of followng function
+	var randNum = lifechance.randi_range(0,10)
+	
+	# decides what happens on hit 
+	if randNum <= 3:
+		# if the value is less than the character dies 
+		get_tree().change_scene("res://Scenes/GameOverScene.tscn")
+		print("dead")
+	elif randNum >= 4 and randNum <= 9:
+		# if the value is between 4 and 8 you loose an oxygen tank
+		print("tank")
+		if len(global_vars.tank_list) != 0:
+			# removes tank
+			global_vars.tank_list.remove(0) 
+			# lets you know you can carry more tanks
+		else:
+			# if you have no oxygen you die 
+			get_tree().change_scene("res://Scenes/GameOverScene.tscn")
+	else:
+		# if your lucky, you live.
+		print("live")
+		pass
+		

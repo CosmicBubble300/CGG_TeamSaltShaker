@@ -4,6 +4,7 @@
 [ext_resource path="res://icon.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
+radius = 66.2722
 
 [node name="OxygenCanister" type="Node2D"]
 script = ExtResource( 1 )
@@ -14,7 +15,8 @@ script = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.265625, 0.242188 )
+position = Vector2( -5.96046e-08, 0 )
+scale = Vector2( 1.89844, 1.76172 )
 texture = ExtResource( 2 )
 
 [connection signal="body_entered" from="InArea?" to="." method="_on_InArea_body_entered"]
