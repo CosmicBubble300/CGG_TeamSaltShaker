@@ -2,3 +2,6 @@ res://default_env.tres
 res://Scenes/PlayerScene.tscn
 res://Scenes/OxygenCanScene.tscn
 res://Scenes/MenuScene.tscn
+res://Scenes/DoorScene.tscn
+res://Scenes/GameOverScene.tscn
+res://Scenes/MonsterScene.tscn

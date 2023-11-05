@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cqj8kvdt5lmne"]
+[gd_scene load_steps=7 format=3 uid="uid://cqj8kvdt5lmne"]
 
 [ext_resource type="Texture2D" uid="uid://evb0golua776" path="res://Assets/astronaut_test.png" id="1"]
 [ext_resource type="Script" path="res://Scripts/PlayerScript.gd" id="2"]
@@ -10,7 +10,22 @@ height = 354.0
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(226, 129)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2pctd"]
+bg_color = Color(0.964706, 0.772549, 0.490196, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f6bvs"]
+bg_color = Color(0.207843, 0.588235, 0.854902, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.8, 0.8, 0.8, 0)
+
 [node name="Character" type="CharacterBody2D"]
+floor_stop_on_slope = false
 script = ExtResource("2")
 
 [node name="HitBox" type="Area2D" parent="."]
@@ -18,17 +33,15 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="HitBoxShape" type="CollisionShape2D" parent="HitBox"]
-position = Vector2(-3, 2)
+position = Vector2(0, 2)
 shape = SubResource("2")
 
 [node name="ObjectCollsion" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(0, 126.5)
 shape = SubResource("1")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(0, -7)
 texture = ExtResource("1")
 region_rect = Rect2(100, 100, 0, 0)
@@ -41,7 +54,10 @@ offset_right = 1454.0
 offset_bottom = 716.0
 rotation = 4.71239
 theme_override_colors/font_color = Color(0.0588235, 0.0431373, 0.372549, 1)
+theme_override_styles/background = SubResource("StyleBoxFlat_2pctd")
+theme_override_styles/fill = SubResource("StyleBoxFlat_f6bvs")
 value = 100.0
+rounded = true
 show_percentage = false
 
 [node name="OxygenTimer" type="Timer" parent="."]
@@ -49,7 +65,8 @@ wait_time = 0.7
 autostart = true
 
 [node name="PlayerCam" type="Camera2D" parent="."]
-zoom = Vector2(10, 10)
+zoom = Vector2(0.5, 0.5)
+position_smoothing_enabled = true
 
 [connection signal="body_entered" from="HitBox" to="." method="_on_HitBox_body_entered"]
 [connection signal="timeout" from="OxygenTimer" to="." method="_on_OxygenTimer_timeout"]
