@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://dbpv7ykoy0p34"]
 
 [ext_resource type="Texture2D" uid="uid://ddmxxjdyy4myf" path="res://Assets/16x16/Tilesets/RVFloors.png" id="1"]
-[ext_resource type="PackedScene" uid="uid://b0ex4vl2x4dly" path="res://Scenes/PlayerScene.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://byx632o3bl4vo" path="res://Scenes/PlayerScene.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://d1svdjlixpbvo" path="res://Scenes/OxygenCanScene.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://ds8yoak85tv4p" path="res://Scenes/MonsterScene.tscn" id="4_f2p63"]
 
@@ -3207,7 +3207,11 @@ layer_0/tile_data = PackedInt32Array(-131076, 196609, 4, -131075, 65537, 6, -131
 position = Vector2( 1094, -484 )
 =======
 [node name="Character" parent="." instance=ExtResource("2")]
+<<<<<<< HEAD
 >>>>>>> 80b7adb649b08d14e563b08200dae12f9a3c68c4
+=======
+scale = Vector2(0.25, 0.25)
+>>>>>>> 41cda82c661161331acc67deeb30af727c214e0a
 
 [node name="OxygenCanister" parent="." instance=ExtResource("3")]
 position = Vector2(-91, 97)
