@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://ds8yoak85tv4p"]
 
 [ext_resource type="Script" path="res://Scripts/Monster.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://dfw82pyc23bh3" path="res://Assets/Villains/sad.png" id="2_6uhcp"]
+[ext_resource type="Texture2D" uid="uid://dp4nkln8qxhqn" path="res://Assets/Villains/sad.png" id="2_6uhcp"]
 
 [sub_resource type="CapsuleShape2D" id="1"]
 radius = 12.0
