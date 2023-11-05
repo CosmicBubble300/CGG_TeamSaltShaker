@@ -14,7 +14,6 @@ const TANKMAX = 3     # max number of O2 tanks you can carry
 ## Sets up random generator for the amount of air in a can ##
 var airamount = RandomNumberGenerator.new()
 
-
 ### CODE ###
 
 # detects colision with tank and picks up tank if allowed 

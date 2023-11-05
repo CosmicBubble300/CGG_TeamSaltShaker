@@ -17,7 +17,7 @@ const TANKMAX = 3        # The maximum numner of O2 tanks you can carry
 
 ### Variables ###
 # Loads global variables 
-@onready var global_vars = get_node("/root/Global")
+@onready var global_vars = get_node("../root/Global")
 
 ### Variables ###
 # Variables for health and oxygen consumption 
