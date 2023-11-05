@@ -1,92 +1,99 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699138641
-default_env.tres::Environment::3668977654462601582::1699135776::0::1::::<><>::
-icon.png::CompressedTexture2D::2075896688001246031::1699113696::1699113794::1::::<><>::
-README.md::TextFile::-1::1699113696::0::1::::<><>::
-testing.txt::TextFile::-1::1699113696::0::1::::<><>::
-testting.txt::TextFile::-1::1699113696::0::1::::<><>::
-VERSION.md::TextFile::-1::1699113696::0::1::::<><>::
-::res://Assets/::1699135698
-astronaut_test.png::CompressedTexture2D::1791898675857249981::1699135606::1699135698::1::::<><>::
-::res://Assets/16x16/::1699113696
-::res://Assets/16x16/Animated Tiles/::1699113794
-Village Animated Decorations.png::CompressedTexture2D::8752666857199506617::1699113696::1699113794::1::::<><>::
-Village Animated Doors.png::CompressedTexture2D::2197631287983933915::1699113696::1699113794::1::::<><>::
-Village Animated Nature.png::CompressedTexture2D::6025986523076490685::1699113696::1699113794::1::::<><>::
-Village Animated Smoke.png::CompressedTexture2D::454110676745706213::1699113696::1699113794::1::::<><>::
-Village Animated Water.png::CompressedTexture2D::8308265825547220115::1699113696::1699113794::1::::<><>::
-::res://Assets/16x16/Tilesets/::1699113794
-RVDecoration.png::CompressedTexture2D::3841710505033622065::1699113696::1699113794::1::::<><>::
-RVDoorsWindows.png::CompressedTexture2D::2761012872059643328::1699113696::1699113794::1::::<><>::
-RVFloors.png::CompressedTexture2D::7396039157603800205::1699113696::1699113794::1::::<><>::
-RVNature.png::CompressedTexture2D::8919970487812143606::1699113696::1699113794::1::::<><>::
-RVRoofs.png::CompressedTexture2D::8468333346596267199::1699113696::1699113794::1::::<><>::
-RVTerrain.png::CompressedTexture2D::4812461911425629215::1699113696::1699113794::1::::<><>::
-RVWalls.png::CompressedTexture2D::5506766743123347000::1699113696::1699113794::1::::<><>::
-RVWater.png::CompressedTexture2D::3564022029667706017::1699113696::1699113794::1::::<><>::
-::res://Assets/Fonts/::1699135698
-Painless.otf::FontFile::4666473159639403988::1699135606::1699135698::1::::<><>::
-PainlessFond_24.tres::FontFile::-1::1699135606::0::1::::<><>::res://Assets/Fonts/Painless.otf
-PainlessFont.tres::FontFile::-1::1699135606::0::1::::<><>::res://Assets/Fonts/Painless.otf
-::res://Assets/Heroes/::1699113794
-Hero 01.png::CompressedTexture2D::2421871131005894236::1699113696::1699113794::1::::<><>::
-Hero 01a.png::CompressedTexture2D::1684494341324432650::1699113696::1699113794::1::::<><>::
-Hero 02.png::CompressedTexture2D::3444467849980210287::1699113696::1699113794::1::::<><>::
-Hero 02a.png::CompressedTexture2D::9162582393842924740::1699113696::1699113794::1::::<><>::
-Hero 03.png::CompressedTexture2D::7749518269291269041::1699113696::1699113794::1::::<><>::
-Hero 03a.png::CompressedTexture2D::1114532000500815561::1699113696::1699113794::1::::<><>::
-Hero 04.png::CompressedTexture2D::7215415287584963218::1699113696::1699113794::1::::<><>::
-Hero 04a.png::CompressedTexture2D::6309462502307495537::1699113696::1699113794::1::::<><>::
-Hero 05.png::CompressedTexture2D::7294907312052674134::1699113696::1699113794::1::::<><>::
-Hero 05a.png::CompressedTexture2D::2952255783148231643::1699113696::1699113794::1::::<><>::
-::res://Assets/Knights/::1699113794
-Knight 01.png::CompressedTexture2D::2482278405702011940::1699113696::1699113794::1::::<><>::
-::res://Assets/NewTiles/::1699135698
-cornerWall.png::CompressedTexture2D::5536764891264016496::1699135606::1699135698::1::::<><>::
-sideWallsTest.png::CompressedTexture2D::6656025866960464409::1699135606::1699135698::1::::<><>::
-::res://Assets/Villagers/::1699113794
-Villager 01.png::CompressedTexture2D::5482789899333182389::1699113696::1699113794::1::::<><>::
-Villager 01a.png::CompressedTexture2D::8743119329567165858::1699113696::1699113794::1::::<><>::
-Villager 02.png::CompressedTexture2D::6903230923197665407::1699113696::1699113794::1::::<><>::
-Villager 02a.png::CompressedTexture2D::1158325440508815114::1699113696::1699113794::1::::<><>::
-Villager 03.png::CompressedTexture2D::2786544324888655112::1699113696::1699113794::1::::<><>::
-Villager 03a.png::CompressedTexture2D::1148354612405233349::1699113696::1699113794::1::::<><>::
-Villager 04.png::CompressedTexture2D::736418266440767541::1699113696::1699113794::1::::<><>::
-Villager 04a.png::CompressedTexture2D::4713536622208359520::1699113696::1699113794::1::::<><>::
-Villager 05.png::CompressedTexture2D::4874321633593917152::1699113696::1699113794::1::::<><>::
-Villager 05a.png::CompressedTexture2D::9152247831271951417::1699113696::1699113794::1::::<><>::
-Villager 06.png::CompressedTexture2D::7412338300133501785::1699113696::1699113794::1::::<><>::
-Villager 06a.png::CompressedTexture2D::8815091682303078747::1699113696::1699113794::1::::<><>::
-Villager 07.png::CompressedTexture2D::2217407804161671527::1699113696::1699113794::1::::<><>::
-Villager 07a.png::CompressedTexture2D::2715421970155440610::1699113696::1699113794::1::::<><>::
-Villager 08.png::CompressedTexture2D::777255931818963465::1699113696::1699113794::1::::<><>::
-Villager 08a.png::CompressedTexture2D::8285737879257353087::1699113696::1699113794::1::::<><>::
-Villager 09.png::CompressedTexture2D::3564313954907054289::1699113696::1699113794::1::::<><>::
-Villager 09a.png::CompressedTexture2D::4509722161688982526::1699113696::1699113794::1::::<><>::
-Villager 10.png::CompressedTexture2D::4185702326314762070::1699113696::1699113794::1::::<><>::
-Villager 10a.png::CompressedTexture2D::8848974333090228357::1699113696::1699113794::1::::<><>::
-::res://Assets/Villains/::1699132362
-blue-enemy.png::CompressedTexture2D::1761188286919290297::1699126849::1699126849::1::::<><>::
-red-enemy.png::CompressedTexture2D::1567512075279487126::1699126617::1699126553::1::::<><>::
-sad.png::CompressedTexture2D::7557675282109117662::1699132335::1699132362::1::::<><>::
-Villain 01.png::CompressedTexture2D::8390481011592253604::1699113696::1699113794::1::::<><>::
-Villain 01a.png::CompressedTexture2D::1970317141286465173::1699113696::1699113794::1::::<><>::
-Villain 02.png::CompressedTexture2D::5161740859504562894::1699113696::1699113794::1::::<><>::
-Villain 02a.png::CompressedTexture2D::903918408754844128::1699113696::1699113794::1::::<><>::
-Villain 03.png::CompressedTexture2D::7164819771058186319::1699113696::1699113794::1::::<><>::
-::res://Scenes/::1699135776
-DoorScene.tscn::PackedScene::-1::1699135606::0::1::::<><>::
-GameOverScene.tscn::PackedScene::-1::1699135606::0::1::::<><>::
-MainScene.tscn::PackedScene::7261750039958901145::1699136558::0::1::::<><>::uid://ddmxxjdyy4myf::::res://Assets/16x16/Tilesets/RVFloors.png<>uid://b0ex4vl2x4dly::::res://Scenes/PlayerScene.tscn<>uid://d1svdjlixpbvo::::res://Scenes/OxygenCanScene.tscn<>uid://ds8yoak85tv4p::::res://Scenes/MonsterScene.tscn
-MenuScene.tscn::PackedScene::-1::1699135606::0::1::::<><>::
-MonsterScene.tscn::PackedScene::8492267928377197653::1699136490::0::1::::<><>::res://Scripts/Monster.gd<>uid://dfw82pyc23bh3::::res://Assets/Villains/sad.png
-OxygenCanScene.tscn::PackedScene::9022611689568841988::1699136431::0::1::::<><>::res://Scripts/OxygenCanScene.gd<>uid://4ttykyu276it::::res://icon.png
-PlayerScene.tscn::PackedScene::-1::1699136407::0::1::::<><>::res://Assets/astronaut_test.png<>res://Scripts/PlayerScript.gd
-::res://Scripts/::1699135606
-DoorScene.gd::GDScript::-1::1699135606::0::1::::<>Node2D<>::
-GameOverScene.gd::GDScript::-1::1699135606::0::1::::<>CanvasLayer<>::
-Global.gd::GDScript::-1::1699135606::0::1::::<>Node<>::
-MenuScene.gd::GDScript::-1::1699135606::0::1::::<>CanvasLayer<>::
-Monster.gd::GDScript::-1::1699133923::0::1::::<>CharacterBody2D<>::
-OxygenCanScene.gd::GDScript::-1::1699136341::0::1::::<>Node2D<>::
-PlayerScript.gd::GDScript::-1::1699136339::0::1::::<>CharacterBody2D<>::
+::res://::1699146387
+default_env.tres::Environment::1403758731012147728::1699146333::0::1::::<><>::
+icon.png::CompressedTexture2D::5957618963523040480::1698025961::1699139808::1::::<><>::
+README.md::TextFile::-1::1699103724::0::1::::<><>::
+testing.txt::TextFile::-1::1699109072::0::1::::<><>::
+testting.txt::TextFile::-1::1699109072::0::1::::<><>::
+VERSION.md::TextFile::-1::1699103724::0::1::::<><>::
+::res://Assets/::1699139808
+astronaut_test.png::CompressedTexture2D::324213006521690879::1699116946::1699139808::1::::<><>::
+::res://Assets/16x16/::1698027567
+::res://Assets/16x16/Animated Tiles/::1699139808
+Village Animated Decorations.png::CompressedTexture2D::3078879623384320059::1698027567::1699139808::1::::<><>::
+Village Animated Doors.png::CompressedTexture2D::300190986837256089::1698027567::1699139808::1::::<><>::
+Village Animated Nature.png::CompressedTexture2D::740642826530802902::1698027567::1699139808::1::::<><>::
+Village Animated Smoke.png::CompressedTexture2D::4890216496110472558::1698027567::1699139808::1::::<><>::
+Village Animated Water.png::CompressedTexture2D::613930568115876574::1698027567::1699139808::1::::<><>::
+::res://Assets/16x16/Tilesets/::1699139808
+RVDecoration.png::CompressedTexture2D::1387009778419783590::1698027567::1699139808::1::::<><>::
+RVDoorsWindows.png::CompressedTexture2D::3642357322808996359::1698027567::1699139808::1::::<><>::
+RVFloors.png::CompressedTexture2D::2826413122149161754::1698027567::1699139808::1::::<><>::
+RVNature.png::CompressedTexture2D::5781945055459742698::1698027567::1699139808::1::::<><>::
+RVRoofs.png::CompressedTexture2D::5160788218409469662::1698027567::1699139808::1::::<><>::
+RVTerrain.png::CompressedTexture2D::7426974139173444472::1698027568::1699139808::1::::<><>::
+RVWalls.png::CompressedTexture2D::2702982472500900353::1698027568::1699139808::1::::<><>::
+RVWater.png::CompressedTexture2D::7693048848350967714::1698027568::1699139808::1::::<><>::
+::res://Assets/Fonts/::1699138832
+Painless.otf::FontFile::4666473159639403988::1699116543::1699139727::1::::<><>::
+PainlessFond_24.tres::FontFile::-1::1699139727::0::1::::<><>::res://Assets/Fonts/Painless.otf
+PainlessFont.tres::FontFile::-1::1699139727::0::1::::<><>::res://Assets/Fonts/Painless.otf
+::res://Assets/Heroes/::1699139808
+Hero 01.png::CompressedTexture2D::9081662860754170644::1698027706::1699139808::1::::<><>::
+Hero 01a.png::CompressedTexture2D::3709153187565797178::1698027706::1699139808::1::::<><>::
+Hero 02.png::CompressedTexture2D::8717076964923649884::1698027706::1699139808::1::::<><>::
+Hero 02a.png::CompressedTexture2D::928275556229694112::1698027706::1699139808::1::::<><>::
+Hero 03.png::CompressedTexture2D::4430705482528017821::1698027706::1699139808::1::::<><>::
+Hero 03a.png::CompressedTexture2D::2576323553493464847::1698027706::1699139808::1::::<><>::
+Hero 04.png::CompressedTexture2D::349087919790788103::1698027706::1699139808::1::::<><>::
+Hero 04a.png::CompressedTexture2D::9168486213745247270::1698027706::1699139808::1::::<><>::
+Hero 05.png::CompressedTexture2D::810285902412476432::1698027706::1699139808::1::::<><>::
+Hero 05a.png::CompressedTexture2D::6744957535474886568::1698027707::1699139808::1::::<><>::
+::res://Assets/Knights/::1699139808
+Knight 01.png::CompressedTexture2D::7527731195879744922::1698027737::1699139808::1::::<><>::
+::res://Assets/NewTiles/::1699139808
+cornerWall.png::CompressedTexture2D::7933079885924556308::1699115681::1699139808::1::::<><>::
+sideWallsTest.png::CompressedTexture2D::8815974625466387853::1699115690::1699139808::1::::<><>::
+::res://Assets/Random Shapes/::1699139808
+BlueSquare.png::CompressedTexture2D::5046015476152100007::1699136791::1699139808::1::::<><>::
+GreenCircle.png::CompressedTexture2D::5065823972192745511::1699136890::1699139808::1::::<><>::
+GreenSquare.png::CompressedTexture2D::8878201696008184468::1699136785::1699139808::1::::<><>::
+LightBlueCircle.png::CompressedTexture2D::4592597826507108861::1699136815::1699139808::1::::<><>::
+LightBlueSquare.png::CompressedTexture2D::8896280184463386050::1699136806::1699139808::1::::<><>::
+OrangeSquare.png::CompressedTexture2D::5573944056529573949::1699136781::1699139807::1::::<><>::
+::res://Assets/Villagers/::1699139807
+Villager 01.png::CompressedTexture2D::7884096040510089787::1698027724::1699139807::1::::<><>::
+Villager 01a.png::CompressedTexture2D::7385130192936410845::1698027725::1699139807::1::::<><>::
+Villager 02.png::CompressedTexture2D::2018727314986548864::1698027725::1699139807::1::::<><>::
+Villager 02a.png::CompressedTexture2D::2531619871762504444::1698027725::1699139807::1::::<><>::
+Villager 03.png::CompressedTexture2D::197481662794418850::1698027725::1699139807::1::::<><>::
+Villager 03a.png::CompressedTexture2D::8651959897355214673::1698027725::1699139807::1::::<><>::
+Villager 04.png::CompressedTexture2D::6182743691490476954::1698027725::1699139807::1::::<><>::
+Villager 04a.png::CompressedTexture2D::6410242040848072221::1698027725::1699139807::1::::<><>::
+Villager 05.png::CompressedTexture2D::1705495635434443887::1698027725::1699139807::1::::<><>::
+Villager 05a.png::CompressedTexture2D::8684608663124193458::1698027725::1699139807::1::::<><>::
+Villager 06.png::CompressedTexture2D::5936977998310465813::1698027726::1699139807::1::::<><>::
+Villager 06a.png::CompressedTexture2D::2599191899488108185::1698027726::1699139807::1::::<><>::
+Villager 07.png::CompressedTexture2D::3257806507906326758::1698027726::1699139807::1::::<><>::
+Villager 07a.png::CompressedTexture2D::7906938853722248455::1698027726::1699139807::1::::<><>::
+Villager 08.png::CompressedTexture2D::8864238632828809887::1698027726::1699139807::1::::<><>::
+Villager 08a.png::CompressedTexture2D::715124899277852642::1698027726::1699139807::1::::<><>::
+Villager 09.png::CompressedTexture2D::6629232741931914330::1698027726::1699139807::1::::<><>::
+Villager 09a.png::CompressedTexture2D::3286475951567096169::1698027726::1699139807::1::::<><>::
+Villager 10.png::CompressedTexture2D::7774034641635649168::1698027726::1699139807::1::::<><>::
+Villager 10a.png::CompressedTexture2D::7737002342967469488::1698027726::1699139807::1::::<><>::
+::res://Assets/Villains/::1699139808
+blue-enemy.png::CompressedTexture2D::390517921495510714::1699138832::1699139807::1::::<><>::
+red-enemy.png::CompressedTexture2D::1865163095717884086::1699138832::1699139807::1::::<><>::
+sad.png::CompressedTexture2D::8272769438723507425::1699138832::1699139807::1::::<><>::
+Villain 01.png::CompressedTexture2D::2730806515238753900::1698027731::1699139807::1::::<><>::
+Villain 01a.png::CompressedTexture2D::5224550747773449360::1698027731::1699139807::1::::<><>::
+Villain 02.png::CompressedTexture2D::1095110116200326693::1698027731::1699139807::1::::<><>::
+Villain 02a.png::CompressedTexture2D::7950688205731152413::1698027732::1699139807::1::::<><>::
+Villain 03.png::CompressedTexture2D::8953679715059474444::1698027732::1699139808::1::::<><>::
+::res://Scenes/::1699146333
+DoorScene.tscn::PackedScene::3927664122711136631::1699144984::0::1::::<><>::uid://dxur2xbqhm2pt
+GameOverScene.tscn::PackedScene::1100257468368979894::1699144984::0::1::::<><>::res://Assets/Fonts/PainlessFont.tres<>res://Assets/Fonts/PainlessFond_24.tres<>res://Scripts/GameOverScene.gd
+MainScene.tscn::PackedScene::7261750039958901145::1699145801::0::1::::<><>::uid://ddmxxjdyy4myf
+MenuScene.tscn::PackedScene::2912810947000333317::1699144984::0::1::::<><>::res://Assets/Fonts/PainlessFont.tres<>res://Assets/Fonts/PainlessFond_24.tres<>res://Scripts/MenuScene.gd
+MonsterScene.tscn::PackedScene::8492267928377197653::1699144984::0::1::::<><>::res://Scripts/Monster.gd<>uid://dp4nkln8qxhqn
+OxygenCanScene.tscn::PackedScene::863038574726372972::1699144984::0::1::::<><>::res://Scripts/OxygenCanScene.gd<>uid://cq46d4xeki6rc
+PlayerScene.tscn::PackedScene::5916464892610176582::1699146333::0::1::::<><>::uid://evb0golua776::::res://Assets/astronaut_test.png<>res://Scripts/PlayerScript.gd
+::res://Scripts/::1699141962
+DoorScene.gd::GDScript::-1::1699139726::0::1::::<>Node2D<>::
+GameOverScene.gd::GDScript::-1::1699139726::0::1::::<>CanvasLayer<>::
+Global.gd::GDScript::-1::1699141962::0::1::::<>Node<>::
+MenuScene.gd::GDScript::-1::1699139726::0::1::::<>CanvasLayer<>::
+Monster.gd::GDScript::-1::1699139726::0::1::::<>CharacterBody2D<>::
+OxygenCanScene.gd::GDScript::-1::1699139726::0::1::::<>Node2D<>::
+PlayerScript.gd::GDScript::-1::1699139727::0::1::::<>CharacterBody2D<>::
