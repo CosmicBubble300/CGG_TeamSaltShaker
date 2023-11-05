@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699146161
-default_env.tres::Environment::1403758731012147728::1699144984::0::1::::<><>::
+::res://::1699146387
+default_env.tres::Environment::1403758731012147728::1699146333::0::1::::<><>::
 icon.png::CompressedTexture2D::5957618963523040480::1698025961::1699139808::1::::<><>::
 README.md::TextFile::-1::1699103724::0::1::::<><>::
 testing.txt::TextFile::-1::1699109072::0::1::::<><>::
@@ -81,14 +81,14 @@ Villain 01a.png::CompressedTexture2D::5224550747773449360::1698027731::169913980
 Villain 02.png::CompressedTexture2D::1095110116200326693::1698027731::1699139807::1::::<><>::
 Villain 02a.png::CompressedTexture2D::7950688205731152413::1698027732::1699139807::1::::<><>::
 Villain 03.png::CompressedTexture2D::8953679715059474444::1698027732::1699139808::1::::<><>::
-::res://Scenes/::1699144984
-DoorScene.tscn::PackedScene::3927664122711136631::1699144984::0::1::::<><>::uid://dxur2xbqhm2pt::::res://Assets/NewTiles/sideWallsTest.png<>res://Scripts/DoorScene.gd
+::res://Scenes/::1699146333
+DoorScene.tscn::PackedScene::3927664122711136631::1699144984::0::1::::<><>::uid://dxur2xbqhm2pt
 GameOverScene.tscn::PackedScene::1100257468368979894::1699144984::0::1::::<><>::res://Assets/Fonts/PainlessFont.tres<>res://Assets/Fonts/PainlessFond_24.tres<>res://Scripts/GameOverScene.gd
 MainScene.tscn::PackedScene::7261750039958901145::1699145801::0::1::::<><>::uid://ddmxxjdyy4myf
 MenuScene.tscn::PackedScene::2912810947000333317::1699144984::0::1::::<><>::res://Assets/Fonts/PainlessFont.tres<>res://Assets/Fonts/PainlessFond_24.tres<>res://Scripts/MenuScene.gd
-MonsterScene.tscn::PackedScene::8492267928377197653::1699144984::0::1::::<><>::res://Scripts/Monster.gd<>uid://dp4nkln8qxhqn::::res://Assets/Villains/sad.png
-OxygenCanScene.tscn::PackedScene::863038574726372972::1699144984::0::1::::<><>::res://Scripts/OxygenCanScene.gd<>uid://cq46d4xeki6rc::::res://icon.png
-PlayerScene.tscn::PackedScene::5916464892610176582::1699144983::0::1::::<><>::uid://evb0golua776::::res://Assets/astronaut_test.png<>res://Scripts/PlayerScript.gd
+MonsterScene.tscn::PackedScene::8492267928377197653::1699144984::0::1::::<><>::res://Scripts/Monster.gd<>uid://dp4nkln8qxhqn
+OxygenCanScene.tscn::PackedScene::863038574726372972::1699144984::0::1::::<><>::res://Scripts/OxygenCanScene.gd<>uid://cq46d4xeki6rc
+PlayerScene.tscn::PackedScene::5916464892610176582::1699146333::0::1::::<><>::uid://evb0golua776::::res://Assets/astronaut_test.png<>res://Scripts/PlayerScript.gd
 ::res://Scripts/::1699141962
 DoorScene.gd::GDScript::-1::1699139726::0::1::::<>Node2D<>::
 GameOverScene.gd::GDScript::-1::1699139726::0::1::::<>CanvasLayer<>::
