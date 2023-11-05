@@ -8,7 +8,7 @@ const TANKMAX = 3     # max number of O2 tanks you can carry
 
 ### VARIABLES ###
 # Loads global variables 
-@onready var global_vars = get_node("/root/Global")
+@onready var global_vars = get_parent().get_node("Global")
 
 
 ## Sets up random generator for the amount of air in a can ##

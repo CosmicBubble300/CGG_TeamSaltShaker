@@ -16,8 +16,10 @@ const O2CONSRUN = 3      # rate of O2 consumption while running
 const TANKMAX = 3        # The maximum numner of O2 tanks you can carry 
 
 ### Variables ###
-# Loads global variables 
-@onready var global_vars = get_node("../root/Global")
+# Loads global variables #res://Scripts/Global.gd
+# /root/mainscene/character
+@onready var global_vars = get_parent().get_node("Global")
+#@onready var global_vars = get_node("Global")
 
 ### Variables ###
 # Variables for health and oxygen consumption 
